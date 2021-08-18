@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:weightSum="4">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/youtube"
+            android:text="Youtube"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="#66b3ff"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/w3school"
+            android:text="W3School"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="#66b3ff"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/facebook"
+            android:text="Facebook"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="#66b3ff"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qau_cs"
+            android:text="QAU CS"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="#66b3ff"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        android:layout_below="@+id/linear"/>
+
+</RelativeLayout>
